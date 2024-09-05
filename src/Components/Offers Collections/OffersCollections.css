@@ -1,0 +1,67 @@
+.offerscollections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 120px;
+}
+
+.offerscollections h1 {
+  color: #171717;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.offerscollections hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.offerscollections-item {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .offerscollections {
+    margin-bottom: 100px;
+  }
+  .offerscollections h1 {
+    font-size: 30px;
+  }
+
+  .offerscollections hr {
+    width: 150px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerscollections {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 540px) {
+  .offerscollections-item {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .offerscollections-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 344px) {
+  .offerscollections-item {
+    grid-template-columns: 1fr;
+  }
+}
